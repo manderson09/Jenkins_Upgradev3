@@ -37,12 +37,12 @@ public class TestGreeter {
 
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
-}
 
 @Test
-  public void greetShouldIncludeGreetingMess() {
-    String someone = "World, World thanks for making me happy";
-
+  public void greetShouldIncludeGreetingMessage() {
+    String someone = "World, World thanks for maling me";
+    
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
+    }  
+
   }
-}
