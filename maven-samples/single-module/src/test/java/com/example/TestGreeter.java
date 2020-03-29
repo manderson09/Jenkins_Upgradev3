@@ -40,7 +40,7 @@ public class TestGreeter {
 
 @Test
   public void greetShouldIncludeGreetingMessag() {
-    String someone = "World, World thanks for maling me";
+    String someone = "World, World thanks for maling muutje";
     
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
     }  
