@@ -12,11 +12,13 @@ pipeline {
                 }
             }
         }
-            stage('Deploy in Staging Environment') {
-            steps {
-                build job: 'DEploy apps stagging environment'
 
-            }
+        stage('Deploy in Staging Environment') {
+              steps {
+                    build job: 'DEploy apps stagging environment'
+              }
+        }
+
           stage('Deploy to Production') {
               steps {
               timeout(time5, unit:'DAYS') {
