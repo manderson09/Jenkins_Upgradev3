@@ -17,9 +17,18 @@ pipeline {
                 build job: 'DEploy apps stagging environment'
 
             }
+          stage('Deploy to Production'){
+              steps{
+              timeout(time5, unit:'DAYS'){
+              input message:'Approve PRODUCTION Deployment?'
+              }
 
+              build job: 'Deploy_Application_Prod_Env
+'
+              }
+
+          }
         }
 
         }
     }
-    
